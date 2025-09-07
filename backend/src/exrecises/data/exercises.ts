@@ -19,6 +19,14 @@ export const EXERCISES = [
   { id: 'abductores', name: 'Abductores', muscleGroup: 'legs'},
   { id: 'remo-barra', name: 'Remo con Barra', muscleGroup: 'back'},
   { id: 'remo-mancuernas', name: 'Remo con Mancuerna', muscleGroup: 'back'},
+  { id: 'remo-mancuernas', name: 'Remo con Mancuerna', muscleGroup: 'back'},
+  { id: 'press-frances', name: 'Press Frances', muscleGroup: 'triceps'},
+  { id: 'curl-scott', name: 'Curl Scott', muscleGroup: 'biceps'},
+  { id: 'extenciones-cuadriceps', name: 'Extensciones de Cuadriceps', muscleGroup: 'legs'},
+  { id: 'curl-femoral', name: 'Curl Femoral', muscleGroup: 'legs'},
+  { id: 'prensa', name: 'Prensa', muscleGroup: 'legs'},
+  { id: 'sentadilla-bulgara', name: 'Sentadilla Bulgara', muscleGroup: 'legs'},
+  
   
 
   // ...agregá los que uses
