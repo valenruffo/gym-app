@@ -2,7 +2,7 @@
 export type MuscleGroup = 'back'|'biceps'|'triceps'|'shoulders'|'chest'|'legs';
 
 export const EXERCISES = [
-  { id: 'press-banca', name: 'Press Banca', muscleGroup: 'chest' as MuscleGroup },
+  { id: 'press-banca', name: 'Press Banca', muscleGroup: 'chest'},
   { id: 'dorsalera', name: 'Dorsalera', muscleGroup: 'back' },
   { id: 'sentadilla', name: 'Sentadilla', muscleGroup: 'legs' },
   { id: 'hip-thrust', name: 'Hip Thrust ', muscleGroup: 'legs' },
@@ -11,6 +11,15 @@ export const EXERCISES = [
   { id: 'press-triceps', name: 'Press de Triceps', muscleGroup: 'triceps' },
   { id: 'vuelos-laterales', name: 'Vuelos Laterales', muscleGroup: 'shoulders' },
   { id: 'press-militar', name: 'Press Militar', muscleGroup: 'shoulders' },
+  { id: 'peso-muerto-rumano', name: 'Peso Muerto Rumano', muscleGroup: 'legs' },
+  { id: 'peck-deck', name: 'Peck Deck', muscleGroup: 'chest'},
+  { id: 'press-inclinado', name: 'Press Inclinado', muscleGroup: 'chest'},
+  { id: 'extensiones-gemelos', name: 'Exrtensiones de Gemelos', muscleGroup: 'legs'},
+  { id: 'aductores', name: 'Aductores', muscleGroup: 'legs'},
+  { id: 'abductores', name: 'Abductores', muscleGroup: 'legs'},
+  { id: 'remo-barra', name: 'Remo con Barra', muscleGroup: 'back'},
+  { id: 'remo-mancuernas', name: 'Remo con Mancuerna', muscleGroup: 'back'},
+  
 
   // ...agregá los que uses
 ];
