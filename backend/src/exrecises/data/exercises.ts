@@ -26,11 +26,4 @@ export const EXERCISES = [
   { id: 'curl-femoral', name: 'Curl Femoral', muscleGroup: 'legs'},
   { id: 'prensa', name: 'Prensa', muscleGroup: 'legs'},
   { id: 'sentadilla-bulgara', name: 'Sentadilla Bulgara', muscleGroup: 'legs'},
-  
-  
-
-  // ...agregá los que uses
-];
-export function findExerciseById(id: string) {
-  return EXERCISES.find(e => e.id === id) ?? null;
-}
+]
