@@ -4,9 +4,10 @@ import mongoose from 'mongoose';
 import { Exercise, ExerciseSchema } from '../schemas/exercise.schema';
 import { EXERCISES } from '../exercises/data/exercises';
 
+
 async function main() {
   await mongoose.connect(process.env.MONGODB_URI!);
-
+  
   const ExerciseModel = mongoose.model('Exercise', ExerciseSchema);
 
   const keys = EXERCISES.map(e => e.id);
