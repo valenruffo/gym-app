@@ -23,7 +23,8 @@ export class User {
 
   @Prop({ 
     unique: true, 
-    required: true })
+    required: true 
+  })
   password: string;
 }
 
