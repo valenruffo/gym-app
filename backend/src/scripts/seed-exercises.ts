@@ -1,7 +1,7 @@
 // scripts/seed-exercises.ts
 import 'dotenv/config';
 import mongoose from 'mongoose';
-import { Exercise, ExerciseSchema } from '../schemas/exercise.schema';
+import { ExerciseSchema } from '../schemas/exercise.schema';
 import { EXERCISES } from '../exercises/data/exercises';
 
 
@@ -21,7 +21,16 @@ async function main() {
   for (const e of EXERCISES) {
     await ExerciseModel.updateOne(
       { key: e.id },
-      { $set: { key: e.id, name: e.name, muscleGroup: e.muscleGroup, tags: e.tags ?? [], isActive: e.isActive ?? true, isCustom: false, createdBy: null } },
+      { $set: { 
+        key: e.id, 
+        name: e.name, 
+        muscleGroup: e.muscleGroup, 
+        tags: e.tags ?? [], 
+        isActive: e.isActive ?? true, 
+        isCustom: false, 
+        createdBy: null 
+        } 
+      },
       { upsert: true }
     );
   }
