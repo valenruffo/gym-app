@@ -3,6 +3,9 @@ import { Document } from 'mongoose';
 
 export type ExerciseDocument = Exercise & Document;
 
+export type MuscleGroup = 'back'|'biceps'|'triceps'|'shoulders'|'chest'|'legs';
+
+
 @Schema({ timestamps: true })
 export class Exercise {
   @Prop({ required: true, unique: true }) // clave estable para seed/upsert
@@ -12,7 +15,7 @@ export class Exercise {
   name: string;
 
   @Prop()
-  muscleGroup?: string;   // "chest" | "back" | etc.
+  muscleGroup?: MuscleGroup;   // "chest" | "back" | etc.
 
   @Prop([String])
   tags?: string[];

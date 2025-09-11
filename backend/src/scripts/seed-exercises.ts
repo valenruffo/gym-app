@@ -6,7 +6,14 @@ import { EXERCISES } from '../exercises/data/exercises';
 
 
 async function main() {
-  await mongoose.connect(process.env.MONGODB_URI!);
+
+  const uri = process.env.MONGODB_URI
+  if(!uri){
+    throw new Error('Falta MONGODB_URI en .env');
+  }
+  await mongoose.connect(uri!, {
+    dbName: 'gym',
+  });
   
   const ExerciseModel = mongoose.model('Exercise', ExerciseSchema);
 
