@@ -1,9 +1,8 @@
-import { Module } from '@nestjs/common';
-import { ExercisesController } from './exercises.controller';
-import { ExercisesService } from './exercises.service';
+import { Module } from "@nestjs/common";
+import { MongooseModule } from "@nestjs/mongoose";
+import { Exercise, ExerciseSchema } from "../schemas/exercise.schema";
 
 @Module({
-  controllers: [ExercisesController],
-  providers: [ExercisesService]
+    imports: [MongooseModule.forFeature([{ name: Exercise.name, schema: ExerciseSchema }])],
 })
 export class ExercisesModule {}
